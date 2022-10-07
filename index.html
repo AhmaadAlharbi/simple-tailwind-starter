@@ -4,11 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Pacifico&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
+    <title>AHMAD website</title>
   </head>
   <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+    <nav class="flex justify-between px-44 py-5 items-center bg-blueish">
+      <h1 class="font-Pacifico text-white font-bold text-4xl tracking-[.20em]">
+        AHMAD
+      </h1>
+      <div
+        class="nav-links hidden md:flex space-x-10 items-center text-white font-Poppins font-bold"
+      >
+        <div class="group">
+          <a href="/">Home</a>
+        </div>
+        <div class="group">
+          <a href="/">About</a>
+        </div>
+        <div class="group">
+          <a href="/">Projects</a>
+        </div>
+        <div class="group">
+          <a href="/" class="bg-amber py-2 px-4 rounded-md">Contact me</a>
+        </div>
+      </div>
+      <div class="flex md:hidden cursor-pointer" id="menu-icon">
+        <img src="images/icon-hamburger.svg" alt="" />
+      </div>
+    </nav>
+    <!-- hero SEction -->
+    <section id="hero">
+      <div
+        class="text-center flex flex-col-reverse px-5 md:flex-row justify-evenly items-center md:text-left py-6"
+      >
+        <!-- text container -->
+        <div class="max-w-2xl">
+          <h4 class="text-3xl text-blueish font-Montserrat my-8">Hi,I am</h4>
+          <h1
+            class="text-6xl md:text-8xl text-amber font-bold font-Pacifico mb-10 tracking-[.15em]"
+          >
+            AHMAD
+          </h1>
+          <h2 class="text-5xl text-blueish font-bold font-Montserrat">
+            Fullstack Developer
+          </h2>
+          <p class="text-md md:text-xl text-grayish font-Poppins my-10">
+            I help small agencies and businesses to make their work to look
+            stunning ,easy to monitor and increase productivity
+          </p>
+          <!-- buttons -->
+          <div class="buttons">
+            <a
+              href="/projects"
+              class="bg-amber text-white p-4 my-10 mr-10 font-Poppins"
+              >My Projects</a
+            >
+            <a
+              href="/contact"
+              class="bg-white border-amber border text-amber p-4 my-10 font-Poppins"
+              >Contant me</a
+            >
+          </div>
+        </div>
+        <!-- img container -->
+        <div>
+          <img src="/images/hero.svg" alt="hero-img" />
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="mt-20 flex flex-col justify-center items-center">
+      <div
+        class="flex flex-col justify-between items-center px-5 py-10 md:flex-row"
+      >
+        <!-- img container -->
+        <div class="">
+          <img src="images/about.svg" alt="" />
+        </div>
+        <!-- text-container -->
+        <div class="max-w-6xl flex flex-col justify-center items-center">
+          <h1
+            class="text-9xl tracking-[.40em] text-grayish opacity-40 font-Montserrat"
+          >
+            About
+          </h1>
+          <h2 class="text-amber font-Pacifico text-7xl mb-10">Who I am</h2>
+          <p class="mb-10 text-blueish text-2xl leading-loose text-center">
+            My name is Ahmad Alharbi , A Computer Engineer in Ministry of
+            Electricity and water in Kuwait and work as a freelancer. I have
+            been coding since 2018 and I have done a lot of projects with great
+            design and functionality feauters , You can check it by yourself in
+            projects section.
+          </p>
+          <div>
+            <a
+              href="/projects"
+              class="bg-amber font-bold text-2xl text-white p-4 my-10 mr-10 font-Poppins"
+              >My Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
